@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pines News</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Link to the external CSS -->
+</head>
+<body>
+
+
+    
+    <div class="button-container">
+        <button id="homeButton" class="btn btn-primary">Home</button>
+        <button class="btn btn-primary" onclick="scrollToSection('editorial')">Editorial</button>
+        <button class="btn btn-primary" onclick="scrollToSection('column')">Column</button>
+        <button class="btn btn-primary" onclick="scrollToSection('science')">Science</button>
+        <button class="btn btn-primary" onclick="scrollToSection('literature')">Literature</button>
+        <button class="btn btn-primary" onclick="scrollToSection('sports')">Sports</button>
+    </div>
+
+    <section id="main">
+        <div class="container">
+            <div class="main-content"></div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h1>News</h1>
+                <div class="line"></div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="./pic/awarding for seminar.jpg" alt="Seminar">
+                    <h3>Seminar</h3>
+                    <p>AWARD FOR THE BEST: On October 17, 2024, at the ICT-DCP room, after the lesson, Jogin Key Tamayo was awarded by Matet Camilio in order to give appreciation to his outstanding teaching.</p>
+                    <p>Photo by Ghebryl Lizardo</p>
+                </div>
+                <div class="service">
+                    <img src="./pic/dama.jpg" alt="SCI-DAMA SHOWDOWN">
+                    <h3>SCI-DAMA SHOWDOWN AT PCNHS</h3>
+                    <p>On October 11, 2024, PCNHS students show their strategic skills in the Sci-Dama competitions, crowning champions across all grade levels.</p>
+                </div>
+                <div class="service">
+                    <img src="./pic/PCNHS pampered.jpg" alt="Crafting Creativity">
+                    <h3>Crafting Creativity</h3>
+                    <p>On October 3, 2024, teachers at PCNHS explored their artistic side through a beadwork jewelry-making workshop, turning creativity into beautiful designs.</p>
+                </div>
+                <div class="service">
+                    <img src="./pic/science action.jpg" alt="Science in Action">
+                    <h3>Science in Action</h3>
+                    <p>On October 11, 2024, the Sci-Quiz Bee at PCNHS highlighted the brilliance of our students, as they battled knowledge for the top spots in each grade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="container">
+            <img src="./pic/quote.png" alt="Quote">
+            <h1>"Journalism is popular, but it is popular mainly as fiction. Life is one world, and life seen in the newspapers another."</h1>
+            <div class="profile">
+                <img src="./pic/profile.jpg" alt="F.G.K. Chesterton">
+                <h4>F. G.K. Chesterton</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h1>Relax and recharge</h1>
+                <p>October 3, 2024, teachers at PCNHS were treated to relaxing whole-body massages, honoring their dedication with a well-deserved moment of pampering.</p>
+            </div>
+            <div class="about-image">
+                <img src="./pic/massage.jpg" alt="RELAX AND RECHARGE">
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <div class="container">
+            <h1>Elimination for Damath and Math Quiz</h1>
+            <p>On October 10, 2024, the students of Pines City National High School (PCNHS) competed in the school elimination round to move on to the district level for Damath and Math Quiz. Students selected to compete exchanged intelligence, vying for a spot at the next level.</p>
+        </div>
+    </section>
+
+
+    <!-- Editorial, Column, Science, Literature, and Sports Sections -->
+    <section id="editorial">
+        <div class="container">
+            <div class="section-title">
+                <h1>Editorial</h1>
+                <div class="line"></div>
+            </div>
+            <p>Insightful opinions and analyses about the latest topics that matter.</p>
+        </div>
+    </section>
+
+    <section id="column">
+        <div class="container">
+            <div class="section-title">
+                <h1>Column</h1>
+                <div class="line"></div>
+            </div>
+            <p>Columns from your favorite writers sharing their perspectives.</p>
+        </div>
+    </section>
+
+    <section id="science">
+        <div class="container">
+            <div class="section-title">
+                <h1>Science</h1>
+                <div class="line"></div>
+            </div>
+            <p>Exploring the world of science, technology, and innovation.</p>
+        </div>
+    </section>
+
+    <section id="literature">
+        <div class="container">
+            <div class="section-title">
+                <h1>Literature</h1>
+                <div class="line"></div>
+            </div>
+            <p>Delve into the beauty of prose, poetry, and storytelling.</p>
+        </div>
+    </section>
+
+    <section id="sports">
+        <div class="container">
+            <div class="section-title">
+                <h1>Sports</h1>
+                <div class="line"></div>
+            </div>
+            <p>Updates and highlights from the world of sports and competition.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript to handle smooth scroll when clicking the buttons -->
+    <script>
+        // Function to scroll to a specific section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Scroll to top when Home button is clicked
+        document.getElementById('homeButton').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
